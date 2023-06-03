@@ -89,7 +89,7 @@ gpasswd -a archy autologin
 groupadd -r nopasswdlogin
 gpasswd -a archy nopasswdlogin
 #### Modify pam to allow the user to autologin without password
-sed '2i\auth      sufficient  pam_succeed_if.so user ingroup nopasswdlogin\' /etc/pam.d/lightdm
+sed -i '2i\auth      sufficient  pam_succeed_if.so user ingroup nopasswdlogin\' /etc/pam.d/lightdm
 
 ## Virtual Box
 systemctl enable vboxservice.service

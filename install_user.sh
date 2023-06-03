@@ -2,13 +2,13 @@
 
 # Installation & configuration of the user
 ## Yay
-su archy
 cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 #### Fonts yay
 yay -Syu ttf-symbola
+cd /tmp
 
 
 ## Spectrwm
@@ -19,5 +19,6 @@ cd VirtualBoxArch/spectrwm
 cp -R . ~/
 ### Configure the shell
 chsh -s /usr/bin/zsh
+cd /tmp
 
 exit
