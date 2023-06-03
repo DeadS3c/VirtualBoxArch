@@ -4,17 +4,17 @@ Repository to build Arch Linux for Virtualbox automatically
 # Installation
 **IMPORTANT**
 
-The installation uses the following partition so it's important to have that minimum space
+The installation uses the following partition with the keymap es by default so it's important to have that minimum space
 
 500Mb for the /boot
-
 20Gb for the /
-
 4Gb for the swap
-
 The rest for the /home
+
 ## Base
-Start the iso file of Arch Linux on VirtualBox
+Start the iso file of Arch Linux on VirtualBox and load your keymap
+
+`loadkeys <keymap>`
 
 Download the install_base.sh with: 
 
