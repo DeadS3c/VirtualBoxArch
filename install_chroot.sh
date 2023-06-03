@@ -101,7 +101,6 @@ sed '2i\auth      sufficient  pam_succeed_if.so user ingroup nopasswdlogin\' /et
 
 ## Virtual Box
 systemctl enable vboxservice.service
-systemctl start vboxservice.service
 
 ## Spectrwm
 ### Configure spectrwm
