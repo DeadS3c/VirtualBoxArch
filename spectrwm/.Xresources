@@ -1,0 +1,56 @@
+!! Colorscheme
+#include "/home/blacky/.config/Xresources/colors/xcolor-dc.Xresources"
+
+!! URxvt Appearance
+*.font: xft:JetBrainsMonoMedium Nerd Font:style=Regular:size=12:antialias=true,\
+        xft:Symbola:style=Regular:size=12,\
+        xft:JoyPixels=Regular:size=12
+*.boldFont: xft:JetBrainsMonoMedium Nerd Font:style=Bold:size=12
+*.italicFont: xft:JetBrainsMonoMedium Nerd Font:style=Italic:size=12
+*.boldItalicFont: xft:JetBrainsMonoMedium Nerd Font:style=Bold Italic:size=12
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 32
+URxvt.iso14755: false
+!URxvt.background: [95]#0c030f !! cube
+URxvt.background: [80]#010101
+!URxvt.background:[90]#21161e !! face
+!URxvt.background: rgba:0000/0000/0200/c800
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,matcher
+URxvt.keyboard-select.clipboard: true
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: qutebrowser
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+!!URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-launcher: qutebrowser
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg
+
+!! Pretty cursor
+Xcursor.theme: oxy-neon-red

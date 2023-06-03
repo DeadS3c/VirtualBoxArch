@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Function to take screenshot and save it with a user-specified name
+screenshot() {
+  # Prompt user for file name
+  file_name=$(echo -e "fullscreen\nactive_window\nselect_area" | dmenu -i -p "What type of screenshot do you want to take?")
+  if [ "$file_name" == "fullscreen" ]; then
+    scrot -s -o ~/screen.png
+  elif [ "$file_name" == "active_window" ]; then
+    scrot -u -o ~/screen.png
+  elif [ "$file_name" == "select_area" ]; then
+    scrot -s -o ~/screen.png
+  fi
+
+  file_name=$(dmenu -i -p "Enter file name: ")
+  if [ -z "$file_name" ]; then
+    echo "No file name entered. Exiting..."
+    exit 1
+  fi
+
+  # Save screenshot with specified name
+  mv ~/screen.png ~/Screenshots/$file_name.png
+  echo "Screenshot saved as $file_name.png"
+}
+
+# Create Screenshots directory if it doesn't exist
+mkdir -p ~/Screenshots
+
+# Take screenshot
+screenshot

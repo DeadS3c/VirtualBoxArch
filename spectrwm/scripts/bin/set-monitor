@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if HDMI-1 is available
+if xrandr | grep "DP-1-3 connected"; then
+    # Configure DP-1-3 as primary with resolution 2560x1444
+    xrandr --output DP-1-3 --primary --mode 2560x1440 --output eDP-1 --off
+    # Set wallpaper
+    feh --bg-fill ~/.config/wall-eye.png
+else
+    # Configure eDP as primary with resolution 1920x1080
+    xrandr --output eDP --primary --mode 1920x1080
+    # Set wallpaper
+    feh --bg-fill ~/.config/wall-eye.png
+fi

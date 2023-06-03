@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Check if volume up key is pressed
+if [ "$1" = "up" ]; then
+    # Increase volume by 5%
+    pactl set-sink-volume 4 +5%
+    notify-send "Volume increased by 5%" -i notification-audio-volume-high
+# Check if volume down key is pressed
+elif [ "$1" = "down" ]; then
+    # Decrease volume by 5%
+    pactl set-sink-volume 4 -5%
+    notify-send "Volume decreased by 5%" -i notification-audio-volume-low
+# Check if mute key is pressed
+elif [ "$1" = "mute" ]; then
+    # Mute audio
+    pactl set-sink-mute 4 toggle
+    if pactl list sinks | grep -q "Mute: yes"; then
+        notify-send "Audio muted" -i notification-audio-volume-muted
+    else
+        notify-send "Audio unmuted" -i notification-audio-volume-high
+    fi
+fi

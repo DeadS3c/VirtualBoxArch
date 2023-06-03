@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ "$1" = "up" ]; then
+    # Prompt user for volume increment using dmenu
+    VOLUME_INCREMENT=$(dmenu -p "Enter volume increment percentage (e.g. 5):")
+    # Increase volume by user-specified percentage
+    pactl set-sink-volume 4 +"$VOLUME_INCREMENT"%
+    notify-send "Volume increased by $VOLUME_INCREMENT%" -i notification-audio-volume-high
+elif [ "$1" = "down" ]; then
+    # Prompt user for volume decrement using dmenu
+    VOLUME_DECREMENT=$(dmenu -p "Enter volume decrement percentage (e.g. 5):")
+    # Decrease volume by user-specified percentage
+    pactl set-sink-volume 4 -"$VOLUME_DECREMENT"%
+    notify-send "Volume decreased by $VOLUME_DECREMENT%" -i notification-audio-volume-low
+elif [ "$1" = "mute" ]; then
+    # Mute audio
+    pactl set-sink-mute 4 toggle
+    if pactl list sinks | grep -q "Mute: yes"; then
+        notify-send "Audio muted" -i notification-audio-volume-muted
+    else
+        notify-send "Audio unmuted" -i notification-audio-volume-high
+    fi
+fi

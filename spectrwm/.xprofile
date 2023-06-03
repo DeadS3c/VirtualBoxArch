@@ -1,0 +1,6 @@
+xcompmgr &
+urxvtd &
+feh --bg-fill --randomize ~/.config/wallpapers/* &
+unclutter &
+setxkbmap es &
+VBoxClient-all &

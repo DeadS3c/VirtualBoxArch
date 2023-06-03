@@ -1,0 +1,39 @@
+!! Face
+
+! special
+*.foreground:  #ccc2c4
+*.background:  #010101
+
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #010101
+*.color8: #010101
+
+! red
+*.color1: #3f4042
+*.color9: #3f4042
+
+! green
+*.color2: #4d4e50
+*.color10: #4d4e50
+
+! yellow
+*.color3: #5e605f
+*.color11: #5e605f
+
+! blue
+*.color4: #5d5e61
+*.color12: #5d5e61
+
+! magenta
+*.color5: #605f64
+*.color13: #605f64
+
+! cyan
+*.color6: #5e6164
+*.color14: #5e6164
+
+! white
+*.color7: #ababad
+*.color15: #ababad

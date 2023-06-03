@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Function to manage poweroff and reboot
+
+power() {
+    # Prompt for choosing
+    select=$(echo -e "poweroff\nreboot" | dmenu -i -p "What do you want to do?")
+    if [ "$select" == "poweroff" ]; then
+        sudo poweroff
+    elif [ "$select" == "reboot" ]; then
+        sudo reboot
+    else
+        exit
+    fi
+}
+
+# Manage power
+power

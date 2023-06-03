@@ -1,0 +1,5 @@
+#!/bin/sh
+dmenu_run -nb '#000000' -nf '#A0A0A0' -sb '#9C3468' -sf '#000000' -p 'run' -fn 'Ubuntu Nerd Font:size=11.5:antialias=true'
+
+#dmenu_run -nb '#000000' -nf '#F4F4F4' -sb '#F4F4F4' -sf '#000000' -p 'run' -fn 'Ubuntu Nerd Font:size=11.5:antialias=true'
+

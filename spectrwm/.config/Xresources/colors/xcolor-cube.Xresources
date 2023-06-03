@@ -1,0 +1,39 @@
+!! Cube
+
+! special
+*.foreground:  #A0A0A0
+*.background:  #000000
+
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #000000
+*.color8: #000000
+
+! red
+*.color1: #5B2857
+*.color9: #5B2857
+
+! green
+*.color2: #255463
+*.color10: #255463
+
+! yellow
+*.color3: #484973
+*.color11: #484973
+
+! blue
+*.color4: #9C3468
+*.color12: #9C3468
+
+! magenta
+*.color5: #1E867B
+*.color13: #1E867B
+
+! cyan
+*.color6: #416D88
+*.color14: #416D88
+
+! white
+*.color7: #631c40
+*.color15: #8b2759

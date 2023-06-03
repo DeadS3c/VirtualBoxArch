@@ -1,2 +1,2 @@
 # VirtualBoxArch
-Automatic installation of Arch Linux in VirtualBox
+Repository to build Arch Linux for Virtualbox automatically

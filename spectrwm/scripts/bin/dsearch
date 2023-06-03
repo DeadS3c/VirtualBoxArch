@@ -1,0 +1,14 @@
+#!/bin/bash
+
+QUERY=$(echo -e "Google\nDuckDuckGo\nBing" | dmenu -i -p "Search Engine:")
+
+if [ "$QUERY" = "Google" ]; then
+    SEARCH=$(echo -e "What are you looking for?" | dmenu -i -p "Google:")
+    xdg-open "https://www.google.com/search?q=$SEARCH"
+elif [ "$QUERY" = "DuckDuckGo" ]; then
+    SEARCH=$(echo -e "What are you looking for?" | dmenu -i -p "DuckDuckGo:")
+    xdg-open "https://duckduckgo.com/?q=$SEARCH"
+elif [ "$QUERY" = "Bing" ]; then
+    SEARCH=$(echo -e "What are you looking for?" | dmenu -i -p "Bing:")
+    xdg-open "https://www.bing.com/search?q=$SEARCH"
+fi
