@@ -70,16 +70,6 @@ pacman -S --noconfirm git virtualbox-guest-utils xcompmgr rxvt-unicode \
     ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh
 
 # Configuracion
-## Yay
-su archy
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-#### Fonts yay
-yay -Syu ttf-symbola
-exit
-
 ## Display Manager
 ### Enable the service
 systemctl enable lightdm.service
@@ -102,16 +92,8 @@ sed '2i\auth      sufficient  pam_succeed_if.so user ingroup nopasswdlogin\' /et
 ## Virtual Box
 systemctl enable vboxservice.service
 
-## Spectrwm
-### Configure spectrwm
+# Enter the user to finalize configuration
 su archy -
-cd /tmp/
-#### Clone the repo with the configuration
-git clone https://github.com/DeadS3c/VirtualBoxArch
-cd VirtualBoxArch/spectrwm
-cp -R . ~/
-### Configure the shell
-chsh -s /usr/bin/zsh
 
 # Exit the chroot and poweroff
 exit
