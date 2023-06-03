@@ -1,5 +1,5 @@
 !! Colorscheme
-#include "/home/blacky/.config/Xresources/colors/xcolor-dc.Xresources"
+#include "/home/archy/.config/Xresources/colors/xcolor-dc.Xresources"
 
 !! URxvt Appearance
 *.font: xft:JetBrainsMonoMedium Nerd Font:style=Regular:size=12:antialias=true,\
