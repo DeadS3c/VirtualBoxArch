@@ -26,10 +26,12 @@ grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Set root passwd
+echo "Setting the root password"
 passwd
 
 # Create a normal user to operate with
 useradd -m -g users -G storage,video,optical,audio,wheel,power,scanner -s /bin/bash archy
+echo "Setting the archy password"
 passwd archy
 
 # Edit the sudoers to give our user sudo permission
