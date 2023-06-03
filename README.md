@@ -1,5 +1,7 @@
 # VirtualBoxArch
-Repository to build Arch Linux for Virtualbox automatically
+Repository to build Arch Linux for Virtualbox automatically  
+This is my main configuration and it makes use of a lot of vim keybindings, including the terminal.  
+So if you are not comfortable with vim, maybe you should use another configuration
 
 # Installation
 **IMPORTANT**
