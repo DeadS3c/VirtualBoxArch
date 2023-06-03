@@ -2,6 +2,17 @@
 Repository to build Arch Linux for Virtualbox automatically
 
 # Installation
+**IMPORTANT**
+
+The installation uses the following partition so it's important to have that minimum space
+
+500Mb for the /boot
+
+20Gb for the /
+
+4Gb for the swap
+
+The rest for the /home
 ## Base
 Start the iso file of Arch Linux on VirtualBox
 
