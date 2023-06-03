@@ -7,7 +7,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 #### Fonts yay
-yay -Syu ttf-symbola
+yay -Syu --noconfirm ttf-symbola
 cd /tmp
 
 
