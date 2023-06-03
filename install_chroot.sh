@@ -36,7 +36,6 @@ passwd archy
 sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
 # Enable Network Manager
-systemctl start NetworkManager.service
 systemctl enable NetworkManager.service
 
 # Change mirror list and choose the fastest 10
