@@ -27,11 +27,17 @@ Give it permissions and execute it:
 `chmod +x install_base.sh && ./install_base.sh`
 
 ## Environment and configuration
-Once it ends the base installation inside the chroot download and execute the install_chroot.sh
+Once it ends the base installation inside the chroot download and execute the install_root.sh
 
-`curl -O https://raw.githubusercontent.com/DeadS3c/VirtualBoxArch/main/install_chroot.sh`
+`curl -O https://raw.githubusercontent.com/DeadS3c/VirtualBoxArch/main/install_root.sh`
 
 `chmod +x install_chroot.sh && ./install_chroot.sh`
+
+Once it finish you should be on the user environment, download the configuration files with
+
+`curl -O https://raw.githubusercontent.com/DeadS3c/VirtualBoxArch/main/install_user.sh`
+
+`chmod +x install_user.sh && ./install_user.sh`
 
 Outside the chroot execute the following to end the installation process
 
