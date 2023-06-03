@@ -20,7 +20,7 @@ Once it ends the base installation inside the chroot download and execute the in
 
 `chmod +x install_chroot.sh && ./install_chroot.sh`
 
-Outside the chroot execute the following to ends the installation process
+Outside the chroot execute the following to end the installation process
 
 `umount -R /mnt`
 
