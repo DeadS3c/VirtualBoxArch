@@ -69,7 +69,7 @@ pacman -S --noconfirm spectrwm
 ## Basic Tools
 pacman -S --noconfirm git virtualbox-guest-utils xcompmgr rxvt-unicode \
     urxvt-perls feh unclutter nmap lynx tor qutebrowser dmenu xclip \
-    ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget
+    ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget privoxy
 
 # Configuracion
 ## Display Manager
@@ -93,6 +93,12 @@ sed -i '2i\auth      sufficient  pam_succeed_if.so user ingroup nopasswdlogin\' 
 
 ## Virtual Box
 systemctl enable vboxservice.service
+
+## TOR
+systemctl enable tor.service
+
+## Privoxy
+systemctl enable privoxy.service
 
 # Enter the user to finalize configuration
 su archy -
