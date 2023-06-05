@@ -69,7 +69,8 @@ pacman -S --noconfirm spectrwm
 ## Basic Tools
 pacman -S --noconfirm git virtualbox-guest-utils xcompmgr rxvt-unicode \
     urxvt-perls feh unclutter nmap lynx tor qutebrowser dmenu xclip \
-    ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget privoxy
+    ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget privoxy \
+    yt-dlp
 
 # Configuracion
 ## Display Manager
