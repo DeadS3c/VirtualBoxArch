@@ -70,7 +70,8 @@ pacman -S --noconfirm spectrwm
 pacman -S --noconfirm git virtualbox-guest-utils xcompmgr rxvt-unicode \
     urxvt-perls feh unclutter nmap lynx tor qutebrowser dmenu xclip \
     ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget privoxy \
-    yt-dlp zathura zathura-cb zathura-djvu zathura-pdf-mupdf libreoffice-fresh
+    yt-dlp zathura zathura-cb zathura-djvu zathura-pdf-mupdf libreoffice-fresh \
+    tmux
 
 # Configuracion
 ## Display Manager
