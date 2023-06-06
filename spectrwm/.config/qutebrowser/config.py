@@ -332,7 +332,8 @@ c.content.private_browsing = False
 ## Valid values:
 ##   - system: Use the system wide proxy.
 ##   - none: Don't use any proxy
-c.content.proxy = 'system'
+#c.content.proxy = 'system'
+c.content.proxy = 'http://127.0.0.1:8118'
 
 ## Send DNS requests over the configured proxy.
 ## Type: Bool
@@ -1183,7 +1184,7 @@ config.bind('wP', 'open -w -- {primary}')
 config.bind('wb', 'set-cmd-text -s :quickmark-load -w')
 config.bind('wf', 'hint all window')
 config.bind('wh', 'back -w')
-config.bind('wi', 'inspector')
+config.bind('wi', 'devtools')
 config.bind('wl', 'forward -w')
 config.bind('wo', 'set-cmd-text -s :open -w')
 config.bind('wp', 'open -w -- {clipboard}')
