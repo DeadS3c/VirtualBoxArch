@@ -71,7 +71,7 @@ pacman -S --noconfirm git virtualbox-guest-utils xcompmgr rxvt-unicode \
     urxvt-perls feh unclutter nmap lynx tor qutebrowser dmenu xclip \
     ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget privoxy \
     yt-dlp zathura zathura-cb zathura-djvu zathura-pdf-mupdf libreoffice-fresh \
-    tmux openbsd-netcat tcpdump
+    tmux openbsd-netcat tcpdump perl-image-exiftool
 
 # Configuracion
 ## Display Manager
