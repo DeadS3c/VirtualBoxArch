@@ -31,7 +31,7 @@ Once it ends the base installation inside the chroot download and execute the in
 
 `curl -O https://raw.githubusercontent.com/DeadS3c/VirtualBoxArch/main/install_root.sh`
 
-`./install_chroot.sh`
+`./install_root.sh`
 
 Once it finish you should be on the user environment, download the configuration files with
 
