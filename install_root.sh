@@ -72,7 +72,7 @@ pacman -S --noconfirm git virtualbox-guest-utils xcompmgr rxvt-unicode \
     ttf-jetbrains-mono-nerd ttf-joypixels xlockmore zsh openssh wget privoxy \
     yt-dlp zathura zathura-cb zathura-djvu zathura-pdf-mupdf libreoffice-fresh \
     tmux openbsd-netcat tcpdump perl-image-exiftool ranger ufw scrot flameshot \
-    zaproxy firefox chromium iwd
+    zaproxy firefox chromium iwd dhclient
 
 # Configuracion
 ## Display Manager
