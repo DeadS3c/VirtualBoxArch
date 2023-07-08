@@ -25,6 +25,11 @@ echo "Archy" > /etc/hostname
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
+# Configure pacman
+sed -i 's/#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
+sed -i 's/#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+sed -i '/CheckSpace/a ILoveCandy' /etc/pacman.conf
+
 # Set root passwd
 echo "Setting the root password"
 passwd
