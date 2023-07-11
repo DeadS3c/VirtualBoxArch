@@ -24,7 +24,7 @@ Download the install_base.sh with:
 
 Give it permissions and execute it: 
 
-`chmod +x install_base.sh`
+`chmod +x install_base.sh`  
 `./install_base.sh`
 
 ## Environment and configuration
