@@ -22,8 +22,24 @@ chsh -s /usr/bin/zsh
 cd /tmp
 
 ## Tools
-### ffuf
+### Enum
+#### ffuf
 go install github.com/ffuf/ffuf/v2@latest
+#### Nuclei
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+#### Katana
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+#### Subfinder
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+#### Httpx
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+#### Waybackurls
+go install github.com/tomnomnom/waybackurls@latest
+#### Unfurl
+go install github.com/tomnomnom/unfurl@latest
+#### anew
+go install -v github.com/tomnomnom/anew@latest
+
 ### Dicctionaries
 cd ~/
 mkdir -p tools/dictionaries
