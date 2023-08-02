@@ -21,4 +21,14 @@ cp -R . ~/
 chsh -s /usr/bin/zsh
 cd /tmp
 
+## Tools
+### ffuf
+go install github.com/ffuf/ffuf/v2@latest
+### Dicctionaries
+cd ~/
+mkdir -p tools/dictionaries
+cd tools/dictionaries
+git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/six2dez/OneListForAll.git
+
 exit
